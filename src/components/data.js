@@ -26,6 +26,10 @@ import yellowBlur from "../assets/yellowBlur.png"
 import greenBlur from "../assets/greenBlur.png"
 import grayBlur from "../assets/grayBlur.png"
 
+import burnaboy1 from "../assets/burnaboy1.png"
+import burnaboy2 from "../assets/burnaboy2.png"
+import burnaboy3 from "../assets/burnaboy3.png"
+import burnaboy4 from "../assets/burnaboy4.png"
 
 export const Data = [
   {
@@ -130,3 +134,33 @@ export const upNext =[
     text: "Sign Up to View More",
   }
 ]
+
+export const views = [
+  {
+    views: '250 Views',
+    amount: '15',
+  },
+  {
+    views: '500 Views',
+    amount: '25',
+  },
+  {
+    views: '1k Views',
+    amount: '35',
+  },
+];
+
+export const burnaboy = [
+  {
+    image: burnaboy1,
+  },
+  {
+    image: burnaboy2,
+  },
+  {
+    image: burnaboy3,
+  },
+  {
+    image: burnaboy4,
+  },
+];

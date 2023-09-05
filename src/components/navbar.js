@@ -9,10 +9,7 @@ import help from "../assets/help.svg"
 const Navbar = () => {
   return (
     <>
-      <Box
-      
-       
-      >
+      <Box w={"100%"}>
         <Flex position={'relative'} top={'1rem'} gap={'35%'}>
           <Box>
             <Image src={logo} alt="logo" ml={'1.5rem'} />

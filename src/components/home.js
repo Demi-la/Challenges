@@ -13,18 +13,22 @@ const Home = () => {
     <>
       <Box
         background={'var(--gray-100, #100E0E)'}
-        height={{ base: '100%', lg: '50rem' }}
+        height={{ base: '100%', lg: 'auto' }}
         fontFamily={"font-family: 'Inter', sans-serif;"}
         overflow={'hidden'}
       >
         <Box display={{ base: 'none', lg: 'block' }}>
           <Navbar />
           <Flex>
-            <Sidebar page1={sidebar} login={true} />
+            <Box>
+              <Sidebar page1={sidebar} login={true} />
+            </Box>
             <HomePage />
           </Flex>
         </Box>
-        <HomeMobile />
+        <Box display={{ base: 'flex', lg: 'none' }}>
+          <HomeMobile />
+        </Box>
       </Box>
     </>
   );

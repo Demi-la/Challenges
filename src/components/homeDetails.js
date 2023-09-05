@@ -1,4 +1,4 @@
-import { Text, Box} from '@chakra-ui/react'
+import { Box} from '@chakra-ui/react'
 import React from 'react'
 import Navbar from './navbar'
 import Sidebar from './sidebar'
@@ -17,8 +17,6 @@ const HomeDetails = () => {
         overflow={'hidden'}
       >
         <Navbar /> <Sidebar page1={details} page2={detailss} login={false} />
-
-        kiguiuiu
       </Box>
     </>
   );

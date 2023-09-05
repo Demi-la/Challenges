@@ -3,16 +3,16 @@ import React from 'react';
 import homelogin from '../assets/homelogin.svg';
 import detailslogin from '../assets/detailslogin.svg';
 
-const Sidebar = ({ homeSidebar, page1, page2, login }) => {
+const Sidebar = ({  page1, page2, login }) => {
   return (
     <>
-      <Box>
-        <Box color={'white'}>
+      <Box position={'relative'} height={""}>
+        <Box color={'white'} >
           <Flex
             maxWidth={'6rem'}
             flexDir={'column'}
             borderRight={'1px solid  var(--gray-50, #858383)'}
-            height={'45rem'}
+            height={'40rem'}
             position={'relative'}
           >
             {page1.map((item, index) => {
@@ -51,7 +51,7 @@ const Sidebar = ({ homeSidebar, page1, page2, login }) => {
               >
                 Challenges
               </Text>
-              <Box>
+              <Box position={"relative"} top={"-3rem"}>
                 {page2?.map((item, index) => {
                   return (
                     <Box key={index}>
@@ -65,7 +65,10 @@ const Sidebar = ({ homeSidebar, page1, page2, login }) => {
                 {login ? (
                   <Image src={homelogin} mt={'2rem'} />
                 ) : (
-                  <Image src={detailslogin} mt={'2rem'} />
+                  <Image
+                    src={detailslogin}
+                    
+                  />
                 )}
               </Box>
             </Box>
